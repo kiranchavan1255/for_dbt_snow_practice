@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: snapshot_demo
+    database: analytics
+    schema: analytics_dbt_schema
+    tables:
+      - name: mock_orders
+      - name: mock_orders1
+      - name: mock_orders2
