@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: FACT_DIM_STG
+    database: FACT_DIM_FOR_SALESFORCE_DB
+    schema: STAGE
+    tables:
+      - name: STG_ACCOUNT
+      - name: STG_ORDER
+      - name: STG_PAYMENT
+      - name: STG_USER
+
+  - name: FACT_DIM_SNAPSHOT
+    database: FACT_DIM_FOR_SALESFORCE_DB
+    schema: SNAPSHOT
+    tables:
+      - name: STG_USER
+     
