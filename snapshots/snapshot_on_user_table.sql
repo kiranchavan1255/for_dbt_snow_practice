@@ -1,5 +1,4 @@
 {% snapshot USER %}
-
 {{
     config(
       target_database='analytics',
@@ -9,9 +8,7 @@
       check_cols=["EMP_ID","USER_NAME","EMAIL","PHONE_NO","COMPANY_NAME","ADDRESS"]
     )
 }}
-
 select * from {{ source('snapshot_demo', 'USER') }}
-
 {% endsnapshot %}
 
 
