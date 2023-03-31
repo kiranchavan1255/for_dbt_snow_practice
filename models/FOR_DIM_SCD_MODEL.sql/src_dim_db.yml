@@ -9,10 +9,18 @@ sources:
       - name: STG_ORDER
       - name: STG_PAYMENT
       - name: STG_USER
+      - name: STG_PRODUCT
+      - name: STG_ORDERITEM
 
   - name: FACT_DIM_SNAPSHOT
     database: FACT_DIM_FOR_SALESFORCE_DB
     schema: SNAPSHOT
     tables:
       - name: STG_USER
+
+  - name: FACT_DIM_DIM
+    database: FACT_DIM_FOR_SALESFORCE_DB
+    schema: DIMENSION
+    tables:
+      - name: DIM_DATE
      

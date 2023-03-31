@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('FACT_DIM_STG', 'STG_ORDERITEM') }}
